@@ -1,0 +1,16 @@
+.currency-converter-button {
+   width: 100%;
+   font-size: var(--font-size-large);
+   height: 50px;
+   border: 0;
+   padding: 12px;
+   border-radius: 4px;
+   background-color: rgb(16, 9, 206);
+   color: rgb(234, 233, 250);
+   margin: 0px 20px;
+   cursor: pointer;
+   &:disabled {
+      background-color: gray;
+      cursor: initial;
+   }
+}

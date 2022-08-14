@@ -1,0 +1,40 @@
+$small: 400px;
+$medium: 800px;
+
+.converter {
+    margin-top: 40px;
+    width: 600px;
+
+    @media screen and (min-width: 0) and (max-width: $small) {
+        width: 300px;
+    } 
+    @media screen and (min-width: $small) and (max-width: $medium) {
+        width: 400px;
+    } 
+    &__label {
+        font-size: var(--font-size-x-large);
+        margin-bottom: 10px;
+    }
+    &__submit {
+        margin: 40px 0px 0px 0px !important;
+        width: 100%;
+        font-size: var(--font-size-x-large);
+        height: 64px !important;
+        border: 0;
+        padding: 16px;
+        border-radius: 12px;
+        background-color: rgb(16, 9, 206);
+        color: rgb(234, 233, 250);
+        cursor: pointer;
+    }
+    &__result {
+        font-size: var(--font-size-3x-large);
+        font-weight: 600;
+        text-align: center;
+        &__description {
+            font-size: var(--font-size-medium);
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+@import './variables';
+
+html,
+body {
+  font-size: 16px !important;
+  font-family: 'Montserrat', sans-serif;
+  margin:0px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(203, 216, 230);
+  flex-direction: column;
+  &__header {
+    @extend %flex-center;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgb(37, 100, 172);
+    color: white;
+    border-bottom: 4px solid rgb(16, 9, 206);
+    &__title {
+      font-size: var(--font-size-2x-large);
+      font-weight: 600;
+    }
+  }
+  &__buttons {
+    display: flex;
+    margin-top: 40px;
+    width: 50%;
+
+  }
+  &__main {
+    @extend %flex-center;
+    width: 100%;
+  }
+}
