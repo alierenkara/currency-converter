@@ -1,3 +1,3 @@
 # currency-converter
 
-REQUORED NODE 14+
+Required Node14+
